@@ -21,5 +21,5 @@ npm run dev
 
 - [Monadlend Frontend](https://monadlend.hiddenz.one/)
 
-![Screenshot](https://github.com/mertcankose/monadlend/blob/main/frontend/src/assets/ss1.png)
-![Screenshot](https://github.com/mertcankose/monadlend/blob/main/frontend/src/assets/ss2.png)
+![Screenshot](https://github.com/mertcankose/monadlend/blob/main/src/assets/ss1.png)
+![Screenshot](https://github.com/mertcankose/monadlend/blob/main/src/assets/ss2.png)
