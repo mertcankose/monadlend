@@ -1,0 +1,17 @@
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+    Header set Access-Control-Allow-Headers "Origin, X-Requested-With, Content-Type, Accept, Authorization"
+</IfModule>
+
+RewriteEngine On
+RewriteBase /
+
+# API isteklerini yönlendir
+RewriteCond %{REQUEST_URI} ^/api/
+RewriteRule ^api/(.*) https://www.bitexen.com/api/$1 [P,L]
+
+# React router için
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
