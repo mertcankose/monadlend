@@ -413,8 +413,8 @@ const Dashboard = () => {
       <main className="container mx-auto px-6 pb-12 relative">
         <div className="grid grid-cols-4 gap-8">
           <div className="col-span-4" data-aos="fade-right">
-            <Card className="border border-[#836EF9]/20 shadow-xl bg-white/5 backdrop-blur-sm text-white">
-              <CardHeader className="bg-white/5 rounded-t-lg border-b border-[#836EF9]/20">
+            <div className="shadow-xl bg-white/5 backdrop-blur-sm text-white rounded-lg">
+              <div className="bg-gray-100 py-4 px-6 rounded-t-lg border-b border-[#836EF9]/20 rounded-lg">
                 <div className="flex items-center space-x-2 p-2">
                   <h2 className="text-xl font-bold text-black">P2P Meme Token Lending Platform</h2>
                 </div>
@@ -422,19 +422,19 @@ const Dashboard = () => {
                   <TabsList className="grid w-full max-w-[600px] grid-cols-3">
                     <TabsTrigger
                       value="borrow"
-                      className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#836EF9] data-[state=active]:to-[#9B88FF] data-[state=active]:text-white"
+                      className="cursor-pointer data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#836EF9] data-[state=active]:to-[#9B88FF] data-[state=active]:text-white"
                     >
                       Borrow
                     </TabsTrigger>
                     <TabsTrigger
                       value="lending"
-                      className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#836EF9] data-[state=active]:to-[#9B88FF] data-[state=active]:text-white"
+                      className="cursor-pointer data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#836EF9] data-[state=active]:to-[#9B88FF] data-[state=active]:text-white"
                     >
                       Lending
                     </TabsTrigger>
                     <TabsTrigger
                       value="myloans"
-                      className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#836EF9] data-[state=active]:to-[#9B88FF] data-[state=active]:text-white"
+                      className="cursor-pointer data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#836EF9] data-[state=active]:to-[#9B88FF] data-[state=active]:text-white"
                     >
                       My Loans
                     </TabsTrigger>
@@ -1059,8 +1059,8 @@ const Dashboard = () => {
                     </div>
                   </TabsContent>
                 </Tabs>
-              </CardHeader>
-            </Card>
+              </div>
+            </div>
           </div>
         </div>
       </main>
