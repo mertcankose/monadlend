@@ -3,6 +3,7 @@
 @layer base {
   :root {
     --radius: 0.5rem;
+    --w3m-accent: #836ef9 !important;
   }
 
   * {

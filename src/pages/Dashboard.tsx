@@ -51,13 +51,13 @@ createAppKit({
   networks: [monadtestnet],
   metadata,
   projectId,
+  themeMode: "light",
   features: {
     analytics: true,
   },
   themeVariables: {
     "--w3m-accent": "#836EF9",
   },
-  themeMode: "light",
 });
 
 const Dashboard = () => {
@@ -388,6 +388,7 @@ const Dashboard = () => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
+        colorScheme: "light",
       }}
     >
       <div className="absolute inset-0 bg-black/10"></div>
