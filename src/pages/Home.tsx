@@ -897,7 +897,6 @@ const MemeStepCard = ({
     <div
       style={{
         position: "relative",
-        display: "inline-block",
         fontSize: "1.5rem",
         fontWeight: 900,
         color: "#FFFFFF",
