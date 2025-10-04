@@ -16,7 +16,7 @@ import logo from "@/assets/logo.png";
 import { errorMessage, successMessage } from "@/helpers/toast";
 import { Link } from "react-router-dom";
 
-const projectId = "415b280d7f14fd394fac17ffed28e6db";
+const projectId = "de1b2a6fb146e4cb4ddf971cfc94acc2";
 
 const metadata = {
   name: "monadlend",
