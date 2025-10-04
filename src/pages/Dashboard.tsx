@@ -320,6 +320,13 @@ const Dashboard = () => {
       const interest = (BigInt(loan.usdtAmount) * BigInt(loan.interestRate)) / BigInt(1000);
       const totalRepayment = BigInt(loan.usdtAmount) + interest;
 
+      // Check USDT balance
+      const userBalance = await usdtTokenContract.balanceOf(address);
+      if (userBalance < totalRepayment) {
+        errorMessage(`Insufficient USDT balance. Need ${ethers.formatEther(totalRepayment)} USDT`);
+        return;
+      }
+
       const currentAllowance = await usdtTokenContract.allowance(address, MONADLEND_ADDRESS);
       if (currentAllowance < totalRepayment) {
         const approveTx = await usdtTokenContract.approve(MONADLEND_ADDRESS, ethers.MaxUint256);
@@ -465,7 +472,7 @@ const Dashboard = () => {
                               className="bg-[#836EF9]/10 border-[#836EF9]/30 text-gray-900 placeholder:text-gray-500"
                             />
                             <p className="text-xs text-gray-700 ml-1.5">
-                              Example: 150 means borrower needs to deposit 150% collateral
+                              Example: 150 means borrower needs to deposit 150% collateral (MON)
                             </p>
                           </div>
 
